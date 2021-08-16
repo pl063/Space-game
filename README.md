@@ -1,4 +1,4 @@
-# Space-game
+# Space game
 Space game is an old-school, space-themed, basic side-scrolling game. 
 
 # About the game:
