@@ -1,0 +1,317 @@
+    body{
+        font-size: 18px;
+        font-family: consolas;
+    }
+    title{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    h1{
+        display: flex;
+        color:white; 
+        align-self: center;
+    }
+    .game-area{
+        position: relative; 
+        width: 100%;
+        height: 93vh;
+        margin: 0;
+        background: rgb(39, 46, 56);
+        background: linear-gradient(0deg, rgba(39, 46, 56, 1) 0%, 
+                                         rgba(70, 76, 84, 1) 33%, 
+                                           rgba(34, 36, 38, 1) 100%);
+    }
+    .start-game{
+        position: relative; 
+        width: 100%;
+        height: 93vh;
+        margin: 0;
+        background-image: url("./images/galaxy-background.jpg");
+        background-color: rgb(166, 92, 181); 
+         display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    .start-game-content{
+        min-height: 100vh; /* height of the browser viewport */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+
+    }
+    #player-username{
+      display: flex;
+      align-self: center;
+      width: 28%;
+      font-family: consolas;
+      font-size: 18px;
+      text-align: center;
+      outline: 1px rgb(217, 120, 235);
+      border-radius: 5px;
+      background-color: rgb(230, 192, 237);
+      resize: none;
+    }
+    .purpleButtons{
+        width: 250px;
+        height: 50px;
+        align-self: center;
+        text-align: center;
+        font-family: consolas;
+        font-size: 18px;
+        background-color: rgb(194, 132, 193);
+        border: none;
+        border-radius: 3px; 
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px
+    }
+    .purpleButtons:hover{
+        background: rgb(255, 79, 252);
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgb(255, 79, 252),
+                    0 0 25px rgb(255, 79, 252),
+                    0 0 50px rgb(255, 79, 252),
+                    0 0 100px rgb(255, 79, 252);
+    }
+    .toolbar{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .player-content{
+        display: flex; 
+        flex-direction: row;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .player-score{
+        display: flex;
+        align-self: center;
+        text-align: center;
+        background-color: white;
+        color:purple;
+    }
+    .coins{
+        display: flex;
+        width: fit-content;
+    }
+    #coinImg{
+        display: flex;
+        background-color: #fff;
+        background-image: url("./images/coin.png");
+        background-size: cover;
+        width: 30px;
+    }
+    #coinsCount{
+        display: flex;
+        align-self: center;
+        }
+    .players-lives{
+        display: flex;
+        justify-content: flex-start;
+        background-color: white;
+        width: fit-content;
+    }
+    .alive{
+        display: flex;
+        background-color: #fff;
+        background-image: url("./images/heart-full.png");
+        background-size: cover;
+        width: 30px;
+    }
+    .paused{
+        display: flex;
+       /* position: absolute; */
+       align-items: center;
+       justify-content: center;
+       align-self: center;
+       order: 2;
+       flex-grow: 1;
+       flex-shrink: 1;
+       text-align: center; 
+       flex-direction: row;  
+       order: 0;
+   }
+    .whiteSpace{
+        display: flex;
+        flex-basis: 10%;
+    }
+    .separator{
+        display: flex;
+        flex-grow: 1;
+    }
+    .buttons{
+        display:flex; 
+        flex-direction: row;  
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .pause-button{
+        width: 30px;
+        height: 30px;
+        background-image: url("./images/pause-button.png");
+        background-size: cover;
+        background-color: white;
+        border: none;
+    }
+    .pause-button:focus{
+        background-image: url("./images/play-button.png");
+    }
+    .pause-button:hover{
+        background-image: url("./images/play-button.png");
+    }
+   .quit-button{
+        width: 30px;
+        height: 30px;
+        background-image: url("./images/endGame-button-white.png");
+        background-size: cover;
+        background-color: white;
+        border: none;
+    }
+    .quit-button:focus{
+        background-image: url("./images/endGame-button-black.png");
+    }
+    .quit-button:hover{
+        background-image: url("./images/endGame-button-black.png");
+    }
+    .avatar{
+        display: flex;
+        position: absolute;
+        z-index: 100;
+        width: 190px;
+        height: 100px;
+        background-image: url("./images/space-ship-green.png");
+        background-size: cover;
+    }
+    .fire{
+        background-image: url("./images/firing.png");
+        background-size: cover;
+        width: 190px;
+        height: 100px;
+    }
+    .fireball{
+        position: absolute; 
+        background-image: url("./images/rockets.png");
+        background-size: cover;
+        width: 115px;
+        height: 50px;
+    }
+    .planet{
+        z-index: 0;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+    .alien{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-image: url("./images/space-ship-alien.png");
+        background-size: cover;
+    }
+    .dead{
+        display: flex;
+        background-color: #fff;
+        background-image: url("./images/heart-empty.png");
+        background-size: cover;
+        width: 30px;
+    }
+    .coin{
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        background-image: url("./images/coin.png");
+        background-size: cover;
+    }
+    .dead-player{
+        display: flex;
+        flex-direction: column;
+        position: relative; 
+        width: 100%;
+        height: 93vh;
+        margin: 0;
+        background-image: url("./images/bg.png");
+        background-size: cover;
+        background-color: thistle;
+        color:white;
+    }
+    .buy-heart{
+        display: flex;
+        background-image: url("./images/paying.png");
+        background-size: cover;
+        background-color: rgb(225, 244, 247);
+        border: #fff;
+        color: black; 
+        width: 457px;
+        height: 184px;
+        align-self: center;
+    }
+   .game-over{
+    position: relative; 
+    width: 100%;
+    height: 93vh;
+    margin: 0;
+    background: rgb(39, 46, 56);
+    background: linear-gradient(0deg, rgba(39, 46, 56, 1) 0%, 
+                                     rgba(70, 76, 84, 1) 33%, 
+                                       rgba(34, 36, 38, 1) 100%);
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   #death{
+       display: flex;
+       align-self: flex-start;
+       order: 1;
+       z-index: 0;
+       position: absolute;
+       width: 478px;
+       height: 640px;
+       background-image: url("./images/death.png");
+       background-size: cover;
+   }
+   .payedAHeart{
+        position: relative; 
+        width: 100%;
+        height: 93vh;
+        margin: 0;
+        background: rgb(39, 46, 56);
+        background: linear-gradient(0deg, rgba(39, 46, 56, 1) 0%, 
+                                        rgba(70, 76, 84, 1) 33%, 
+                                        rgba(34, 36, 38, 1) 100%);
+        color: white; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   }
+   .fairy{
+    display: flex;
+    align-self: flex-start;
+    order: 1;
+    z-index: 0;
+    position: absolute;
+    width: 611px;
+    height: 640px;
+    background-image: url("./images/fairy.png");
+    background-size: cover;
+   }
+  
+    .hide{
+        display: none;
+    }
