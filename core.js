@@ -303,7 +303,7 @@
                         function payHeart(e){   
                             e.preventDefault(); 
                             let playersCoins = Number(coinsCountEl.textContent);
-                            if(playersCoins >= 2){ 
+                            if(playersCoins >= 200){ 
                                 deadPlayerScreen.classList.add("hide");
                                 payedAHeart.classList.remove("hide"); 
                                 firstHeart.classList.remove("dead"); 
