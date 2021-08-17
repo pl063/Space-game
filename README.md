@@ -9,6 +9,9 @@ You can pause the game anytime using the pause button in the right corner of the
 By destroying enemy spaceships, you gain points. For each destroyed ship, your points increase by 200 automatically. 
 The state of your hearts, coins, and points is always displayed. You can see it on the left part of the toolbar. 
 
+# Dowlnoad 
+You can download the Space Game files archived in .zip format. 
+
 # About the credits:
 Most of the used images are from pixabay.com. The toolbar buttons' icons and the hearts' icons are from flaticon.com:
 -	Quit button icons: https://smashicons.com;
