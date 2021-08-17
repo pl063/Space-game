@@ -358,8 +358,6 @@
                                                 scene.isActiveGame = true; 
                                                 window.requestAnimationFrame(gameAction); 
                                                 isPaused = false; 
-                                                // let pauseButton = document.querySelector(".pause-button"); 
-                                                // pauseButton.style.backgroundImage = "url('./images/pause-button.png')";
                                             } else{
                                                 pausedGameScreen.classList.remove("hide"); 
                                                 scene.isActiveGame = false; 
@@ -373,10 +371,6 @@
                                                     scene.isActiveGame = false; 
                                                     gameArea.classList.add("hide"); 
                                                     location.reload()
-                                               } else{
-                                                // let quitButton = document.querySelector(".quit-button"); 
-                                                // quitButton.style.backgroundImage = "url('./images/endGame-button-white.png')"; 
-                                               }
-
+                                               } 
                                             }
     }
