@@ -21,6 +21,7 @@
         background: linear-gradient(0deg, rgba(39, 46, 56, 1) 0%, 
                                          rgba(70, 76, 84, 1) 33%, 
                                            rgba(34, 36, 38, 1) 100%);
+        background-image: url("./images/bg.jpg");
     }
     .start-game{
         position: relative; 
@@ -196,7 +197,7 @@
         background-size: cover;
     }
     .fire{
-        background-image: url("./images/firing.png");
+        background-image: url(".images/firing.png");
         background-size: cover;
         width: 190px;
         height: 100px;
