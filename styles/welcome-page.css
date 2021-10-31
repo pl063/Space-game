@@ -1,0 +1,90 @@
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fruktur&display=swap');
+
+    body{
+        font-family: 'Fruktur', cursive;
+        background-color: #fff;
+        background-image: url("/images/welcome-bg.jpg");
+    }
+
+    nav{
+            display: flex; 
+            flex-direction: row; 
+            font-family: 'Alfa Slab One', cursive;
+            gap: 20px;
+            flex-grow: 1;
+            font-size: 20px;
+    }
+
+    .blue{
+        background-color: rgb(113, 175, 209);
+    }
+
+    .blueHover:hover{
+        background: rgb(55, 185, 255);
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgb(55, 185, 255),
+                    0 0 25px rgb(55, 185, 255),
+                    0 0 50px rgb(55, 185, 255),
+                    0 0 100px rgb(55, 185, 255);
+    }
+
+    button{
+        width: 250px;
+        height: 50px;
+        border-radius: 10px; 
+        font-size: 20px;
+        border: none;
+        font-family: 'Fruktur', cursive;
+        -webkit-animation: glowing 1000ms, 5000ms ;
+        -moz-animation: glowing 1000ms, 5000ms;
+        -o-animation: glowing 1000ms, 5000ms ;
+        animation: glowing 1000ms, 5000ms ;
+    }
+
+    .welcomePage-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1{    
+        font-size: 50px;
+        color: white;
+    }
+
+    .twinkle{
+        background: rgb(55, 185, 255);
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgb(55, 185, 255),
+                    0 0 25px rgb(55, 185, 255),
+                    0 0 50px rgb(55, 185, 255),
+                    0 0 100px rgb(55, 185, 255);
+    }
+
+
+    @-webkit-keyframes glowing {
+        0% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 3px rgb(55, 185, 255); }
+        50% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 40px rgb(55, 185, 255); }
+        100% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 3px rgb(55, 185, 255); }
+      }
+      
+      @-moz-keyframes glowing {
+        0% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 3px rgb(55, 185, 255); }
+        50% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 40px rgb(55, 185, 255); }
+        100% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 3px rgb(55, 185, 255); }
+      }
+      
+      @-o-keyframes glowing {
+        0% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 3px rgb(55, 185, 255); }
+        50% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 40px rgb(55, 185, 255); }
+        100% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 3px rgb(55, 185, 255); }
+      }
+      
+      @keyframes glowing {
+        0% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 3px rgb(55, 185, 255); }
+        50% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 40px rgb(55, 185, 255); }
+        100% { background-color: rgb(113, 175, 209);; -webkit-box-shadow: 0 0 3px rgb(55, 185, 255); }
+      }
