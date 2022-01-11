@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8">
+                <link rel="stylesheet" href="style.css">
+                <script src="core.js"></script>
+                <tittle class="hide">Space Game</tittle>
+            </head>
+                <body onload="main()">
+                    <div class="game-wrapper">
+                        <div class="toolbar hide">
+                            <div class="player-content">
+                                <div class="players-lives">
+                                    <span class="firstLife alive"></span>
+                                    <span class="secondLife alive"></span>
+                                </div>
+                                <div class="whiteSpace"></div>
+                                <div class="player-score">0 pts.</div>
+                                <div class="whiteSpace"></div>
+                                <div class="coins">
+                                    <span id="coinsCount">0</span>
+                                    <span id="coinImg"></span>
+                                </div>
+                            </div>
+                            <dib class="paused hide">Game is paused</dib>
+                            <div class="buttons">
+                            </div>                
+                        </div>
+                        <div class="start-game">
+                                <div class="start-game-content">
+                                    <h1>Welcome to Space Game</h1>
+                                    <textarea id="player-username" placeholder="Enter username or play anonymously"></textarea>
+                                    <button id = "start" class="purpleButtons">Start a game</button>
+                                </div>
+                        </div>    
+                        <div class="game-area hide"></div>
+                        <div class="game-over hide">
+                            <div id="death"></div>
+                            <h1>Game is over</h1>
+                            <button class="replay purpleButtons">Replay</button>
+                            <p id="bestScore">Best score: </p>
+                            <p>Players:</p>
+                            <p id="players"></p>
+                        </div>
+                         <div class="dead-player hide">
+                             <h1>Seems like you've ran out of hearts!</h1>
+                             <h1>Would you want to buy a heart?</h1>
+                             <div class="buy-heart"></div>
+                             <button id = "payAHeart" class="purpleButtons">Buy</button>
+                         </div>
+                         <div class="payedAHeart hide">
+                             <h1>You purchased a heart!</h1>
+                             <div class="fairy"></div>
+                             <button class="continue purpleButtons">Continue</button>
+                         </div>
+                    </div>
+                </body>
+        </html>

@@ -1,33 +1,68 @@
     @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fruktur&display=swap');
 
     body{
-        font-family: 'Fruktur', cursive;
-        background-color: #fff;
-        background-image: url("/images/welcome-bg.jpg");
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      font-family: 'Fruktur', cursive;
+      background-color: rgb(25, 5, 63);
+      color: rgb(255, 255, 255);
+  }
+  .welcomePage-wrapper{
+    display: flex;
+    gap: 10px;
+  }
+
+    .welcome-image{
+      display: flex;
+      background-color: #fff;
+      background-image: url("../images/new-bg.jpg");
+        width: 75%;
+        height: 90%;
+    }
+
+    img{
+      display: flex;
+        width: 100%; 
+        height: 100%;
     }
 
     nav{
             display: flex; 
             flex-direction: row; 
-            font-family: 'Alfa Slab One', cursive;
+            font-family: 'Alfa Slab One';
             gap: 20px;
             flex-grow: 1;
             font-size: 20px;
+            background-color: rgb(202,64,174);
+            color: black;
+    }
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .userNav{
+      margin-left: auto;
     }
 
     .blue{
         background-color: rgb(113, 175, 209);
     }
 
-    .blueHover:hover{
-        background: rgb(55, 185, 255);
+    /* .blueHover:hover{
+        background: rgb(250, 178, 77);
         color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 5px rgb(55, 185, 255),
-                    0 0 25px rgb(55, 185, 255),
-                    0 0 50px rgb(55, 185, 255),
-                    0 0 100px rgb(55, 185, 255);
-    }
+        border-radius: 7px;
+        box-shadow: 0 0 5px   rgb(250, 178, 77),
+                    0 0 25px  rgb(250, 178, 77),
+                    0 0 50px  rgb(250, 178, 77),
+                    0 0 100px rgb(250, 178, 77);
+    } */
+
+
 
     button{
         width: 250px;
@@ -40,7 +75,31 @@
         -moz-animation: glowing 1000ms, 5000ms;
         -o-animation: glowing 1000ms, 5000ms ;
         animation: glowing 1000ms, 5000ms ;
+        background-color: rgb(192, 81, 243);
+        /* color: #fff;  */
     }
+
+    button:hover span {
+      display: none;
+    }
+
+    button:hover:before {
+      content: "Start";
+    }
+
+    button:hover{
+      background: rgb(238, 78, 206);
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px   rgb(238, 78, 206),
+                  0 0 25px  rgb(238, 78, 206),
+                  0 0 50px  rgb(238, 78, 206),
+                  0 0 100px rgb(238, 78, 206);
+
+      color: black; 
+  }
+
+
 
     .welcomePage-wrapper{
         display: flex;
@@ -51,7 +110,9 @@
 
     h1{    
         font-size: 50px;
-        color: white;
+        color: rgb(255, 255, 255);
+        margin: 0; 
+        padding: 0;
     }
 
     .twinkle{

@@ -1,0 +1,29 @@
+{
+  "name": "space-game-v2",
+  "version": "1.0.0",
+  "description": "Required packages",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "http-server -a localhost -p 3000 -P http://localhost:3000? "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pl063/Space-game.git"
+  },
+  "author": "Teo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pl063/Space-game/issues"
+  },
+  "homepage": "https://github.com/pl063/Space-game#readme",
+  "dependencies": {
+    "antd": "^4.18.3",
+    "bootstrap-icons": "^1.7.2",
+    "http-server": "^14.0.0",
+    "lit-html": "^2.0.2",
+    "page": "1.11.6",
+    "page.js": "^4.13.3",
+    "playwright": "^1.17.1"
+  }
+}
