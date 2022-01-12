@@ -6,9 +6,24 @@
       justify-content: space-between;
       gap: 20px;
       font-family: 'Fruktur', cursive;
-      background-color: rgb(25, 5, 63);
+      background: radial-gradient(circle at bottom, black 10%, rgb(25, 5, 63)) ;
       color: rgb(255, 255, 255);
+      height: 100vh;
+      overflow: hidden;
+
+      /* rgb(25, 5, 63 */
   }
+
+
+  .space {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  
   .welcomePage-wrapper{
     display: flex;
     gap: 10px;
